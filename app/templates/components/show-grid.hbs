@@ -1,13 +1,12 @@
 {{yield}}
-
-<button class="new-item-btn m-20" onclick={{action 'changeItems'}}>+ New Item</button>
-
+<button class="new-item-btn m-20" onclick={{action "changeItems"}}>+ New Item</button>
+{{cool}}
 {{#grid-stack onChange=(action (mut test) true)}}
   {{#each items as |item|}}
     {{#grid-stack-item
         options=(hash x=0 y=item)
       }}
-    {{item}}
+      {{item}}
     {{/grid-stack-item}}
   {{/each}}
 {{/grid-stack}}
