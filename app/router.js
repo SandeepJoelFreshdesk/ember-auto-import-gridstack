@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('grid-1');
+  this.route('grid-2');
+  this.route('home');
 });
 
 export default Router;

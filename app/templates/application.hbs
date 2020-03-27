@@ -1,5 +1,16 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
+{{!-- {{welcome-page}} --}}
 {{!-- Feel free to remove this! --}}
+{{#link-to "home" class='m-20' }}
+  Home
+{{/link-to}}
+
+{{#link-to "grid-1" class='m-20'}}
+  Grid 1
+{{/link-to}}
+
+{{#link-to "grid-2" class='m-20'}}
+  Grid 2
+{{/link-to}}
 
 {{outlet}}
